@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:text="This project was developed as a joint operation between Nordic Semiconductors, NTNU and us. The final project was created as our final bachelor thesis before getting our bachelors degree in Electronic Engineering at NTNU Trondheim. The project is meant to inspire and enlighten about Bluetooth low energy and resonant frequency."
+        android:layout_weight="0.16"
+        android:layout_marginTop="60dp"
+        android:layout_toStartOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/default_imageWidth"
+        android:layout_height="@dimen/default_imageHeight"
+        app:srcCompat="@drawable/nordic_semiconductor_horizontal"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/default_imageWidth"
+        android:layout_height="@dimen/default_imageHeight"
+        app:srcCompat="@drawable/ntnu_hovedlogo_eng"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bachelor's degree in Electrical Engineering at NTNU Trondheim with specialization in electronics, project management and wireless communication."
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/default_imageWidth"
+        android:layout_height="@dimen/default_imageHeight"
+        app:srcCompat="@drawable/bilde_martin"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="30dp"
+        android:text="Bachelor's degree in electronics with specialization in Wireless communication, digital systems and mathematics."
+        android:layout_toStartOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/default_imageWidth"
+        android:layout_height="@dimen/default_imageHeight"
+        app:srcCompat="@drawable/stig"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginTop="24dp"
+        android:text="Bachelors student at NTNU, my field of study is Electrical Engineering with specialization on Industrial Instrumentation. My main interests for the time being is BLE, embedded- and web-application development."
+        android:layout_toStartOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="@dimen/default_imageWidth"
+        android:layout_height="@dimen/default_imageHeight"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_marginStart="18dp"
+        app:srcCompat="@drawable/andre" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Martin Henriksen Dahl"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView5"
+        android:layout_alignParentStart="true"
+        android:text="Stig Kvannli Olsen"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignParentStart="true"
+        android:text="André Nicolaysen"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@+id/imageView6" />
+
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer" />
+
+
+
+</android.support.v4.widget.DrawerLayout>

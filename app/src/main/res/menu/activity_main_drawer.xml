@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_control"
+            android:icon="@drawable/ic_flash_on_black_24dp"
+            android:title="Control Panel" />
+        <item
+            android:id="@+id/nav_aboutme"
+            android:icon="@drawable/ic_bubble_chart_black_24dp"
+            android:title="About Me" />
+        <item
+            android:id="@+id/nav_aboutnordic"
+            android:icon="@drawable/ic_settings_bluetooth_black_24dp"
+            android:title="About Nordic" />
+        <item
+            android:id="@+id/aboutntnu"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="About NTNU" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_devzone"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Nordic DevZone" />
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Earthquake Machine Github" />
+            <item
+                android:id="@+id/nav_physweb"
+                android:icon="@drawable/ic_web_black_24dp"
+                android:title="PhysicalWeb ControlPanel" />
+        </menu>
+    </item>
+
+</menu>
